@@ -1,5 +1,17 @@
 
 # Devolo home Control Smart Metering Plug MT02792
+# urspruenglicher entityname z.b.
+#  sensor.devolo_home_control_smart_metering_plug_mt02792_current
+# Entity konnte einzeln umbenannt werden z.b.
+#    friendly_name: Woschmaschie Strom
+# Daraus resultiert eine neue Entity
+
+# Z-Wave Rename Node
 # -> Stecker Waschmaschine
-  sensor.devolo_home_control_smart_metering_plug_mt02792:
-    friendly_name: Woschmaschie
+# Veraenderung in zwcfg_0x...xml
+# <Node id="2" name="Stecker Waschmaschine"
+#   <Manufacturer id="175" name="Devolo home Control">
+#     <Product type="1" id="12" name="Smart Metering Plug MT02792" />
+# Vorher, nach dem Add Node stand da <Node id="2" name="" ...
+
+
