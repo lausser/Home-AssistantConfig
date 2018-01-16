@@ -1,0 +1,5 @@
+
+# Devolo home Control Smart Metering Plug MT02792
+# -> Stecker Waschmaschine
+  sensor.devolo_home_control_smart_metering_plug_mt02792:
+    friendly_name: Woschmaschie
