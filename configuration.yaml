@@ -72,3 +72,9 @@ script: !include scripts.yaml
 sensor: !include sensors.yaml
 
 prometheus:
+
+zwave:
+  usb_path: /dev/ttyACM0
+  network_key: !secret zwave_secret_key
+  new_entity_ids: true
+
